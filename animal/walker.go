@@ -1,4 +1,4 @@
-package animal
+.package animal
 
 import "fmt"
 
@@ -9,5 +9,6 @@ type Walker interface {
 
 // Describe generates a string about how a walker walks
 func DescribeWalker(walker Walker) string {
+	fmt.Println("walking...")
 	return fmt.Sprintf("Walks on %d legs.", walker.Legs())
 }

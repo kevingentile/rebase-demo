@@ -9,5 +9,5 @@ type Walker interface {
 
 // Describe generates a string about how a walker walks
 func DescribeWalker(walker Walker) string {
-	return fmt.Sprintf("normally walks on %d legs", walker.Legs())
+	return fmt.Sprintf("Walks on %d legs.", walker.Legs())
 }
